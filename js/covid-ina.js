@@ -37,7 +37,7 @@ let fetchDataIna = async() => {
 						</div>`;
 		dataIna += schemaStat;
 	}
-	fetch('http://literasistmj.000webhostapp.com/world/indonesia')
+	fetch('https://literasistmj.000webhostapp.com/world/indonesia')
 	.then(res => {
 		return res.json();
 	}).then(res => {
