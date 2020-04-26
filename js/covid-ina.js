@@ -28,7 +28,7 @@ let fetchDataIna = async() => {
 										<div class="text-right">
 											<h3>${title}</h3>
 											<p class="info_ina_total">
-												<span id="inaKasus">${total}</span> Orang
+												<span class="inaKasus">${total}</span> Orang
 											</p>
 										</div>
 									</div>

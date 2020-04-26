@@ -53,11 +53,12 @@ span.green {
 	color: #34AE8A;
 }
 
-#covid-ina .card:hover{
+#covid-ina .card:hover,
+#covid-jatim .card:hover{
 	box-shadow: 0 0 15px $e4e4e4;
 }
 
-.card.info-ina{
+.card.info-ina {
 	color: #fff;
 }
 .card.info-ina .icon {
@@ -73,3 +74,46 @@ span.green {
 .table-responsive {
 	max-height: 70vh;
 }
+
+#istilah-terkait .card .card-header {
+	background-color: #fff;
+	font-family: 'Poppins',cursive;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+
+.bg-success,.btn-success {
+	background-color: #34AE8A!important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #34AE8A;
+}
+
+footer {
+	font-family: 'Poppins',cursive;
+	color: #ddd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+footer a:hover,footer a {
+	color: #fff;
+	text-decoration: none
+}
+
