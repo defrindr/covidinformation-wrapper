@@ -6,9 +6,11 @@
 	<!-- meta -->
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
 	<!-- font awesome -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+	<script src="/libs/fa/all.min.js"></script>
+	<!-- favicon -->
+	<link rel="icon" href="/images/Medicalwp-Medical-Health-Sign-red.ico">
 	<!-- custom style -->
 	<link rel="stylesheet" href="/css/style.css">
 	<link rel="stylesheet" href="/css/responsive-768px.css">
@@ -18,52 +20,86 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Open+Sans|Poppins|Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header class="mb-4">
-		<nav class="navbar navbar-expand-md nav container">
-			<a href="" class="navbar-brand">
-				CeCov
-			</a>
-			<span class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse">
-				<i class="fa fa-bars"></i>
-			</span>
-			<div class="navbar-collapse collapse" id="navbarCollapse">
-				<ul class="navbar-nav ml-auto mt-2">
-					<li class="nav-item">
-						<a href="#info" class="nav-link">Apa itu CeCov ?</a>
-					</li>
-					<li class="nav-item">
-						<a href="#covid-id"  class="nav-link">Covid Indonesia</a>
-					</li>
-					<li class="nav-item">
-						<a href="#covid-jatim"  class="nav-link">Covid  Jatim</a>
-					</li>
-					<li class="nav-item">
-						<a href="#covid-jatim"  class="nav-link">Pencegahan</a>
-					</li>
-					<li class="nav-item">
-						<a href="#covid-jatim"  class="nav-link">Our Team</a>
-					</li>
-				</ul>
+	<!-- header -->
+	<header class="m-md-5 m-3 p-3">
+		<nav class="navbar navbar-expand-md nav fixed-top">
+			<div class="container">
+				<a href="" class="navbar-brand">
+					CeCov
+				</a>
+				<span class="navbar-toggler" data-target="#navbarCollapse" data-toggle="collapse">
+					<i class="fa fa-bars"></i>
+				</span>
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+					<ul class="navbar-nav ml-auto mt-2">
+						<li class="nav-item">
+							<a href="#info" class="nav-link">Apa itu CeCov ?</a>
+						</li>
+						<li class="nav-item">
+							<a href="#covid-id"  class="nav-link">Covid Indonesia</a>
+						</li>
+						<li class="nav-item">
+							<a href="#covid-jatim"  class="nav-link">Covid  Jatim</a>
+						</li>
+						<li class="nav-item">
+							<a href="#covid-jatim"  class="nav-link">Pencegahan</a>
+						</li>
+						<li class="nav-item">
+							<a href="#covid-jatim"  class="nav-link">Our Team</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<section id="info" class="py-4">
+	<!-- end header -->
+
+	<!-- section info -->
+	<section id="info" class="pb-5 pt-5">
 		<div class="container">
-			<div class="col-md-12">
-				<div class="card">
-					<div class="card-body">
-						<div class="row">
-							<div class="col-md-6">
-								<img src="/images/undraw_faq_rjoy.png" alt="header__img__1" class="img img-fluid">
-							</div>
-							<div class="col-md-6">
-								<h1 class="mb-4">Apa itu <span class="red">CeCov</span> ? </h1>
-								<p>
-									<b><span class="red">CeCov</span></b> adalah sebuah platform yang dikembangkan untuk memberikan informasi terkini dikala pandemi <b>COVID-19</b> yang merajalela saat ini.
-								</p>
-								<p>
-									<b>COVID-19</b> sendiri adalah penyakit menular yang disebabkan oleh jenis coronavirus yang baru ditemukan. Ini merupakan virus baru dan penyakit yang sebelumnya tidak dikenal sebelum terjadi wabah di Wuhan, Tiongkok, bulan Desember 2019.
-								</p>
+			<div class="card">
+				<div class="card-body p-md-5 p-3">
+					<div class="row">
+						<div class="col-md-6 pb-2">
+							<img src="/images/undraw_faq_rjoy.png" alt="header__img__1" class="img img-fluid">
+						</div>
+						<div class="col-md-6">
+							<h1 class="mb-5">Apa itu <span class="green">CeCov</span> ? </h1>
+							<p>
+								<b><span class="green">CeCov</span></b> adalah sebuah platform yang dikembangkan untuk memberikan informasi terkini dikala pandemi <b>COVID-19</b> yang merajalela saat ini.
+							</p>
+							<p>
+								<b>COVID-19</b> sendiri adalah penyakit menular yang disebabkan oleh jenis coronavirus yang baru ditemukan. Ini merupakan virus baru dan penyakit yang sebelumnya tidak dikenal sebelum terjadi wabah di Wuhan, Tiongkok, bulan Desember 2019.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end section info -->
+
+	<section id="covid-id" class="pt-5 pb-5 container">
+		<div class="mb-4">
+			<h2 class="text-center mb-3 pt-5 sec__title">Kasus COVID-19 di <span class="green">Indonesia</span></h2>
+			<p class="text-center mb-5 pb-5"> Terakhir diupdate : <span id="inaLastUpdated">-</span></p>
+			<div class="row mb-3" id="inaStatistik">
+			</div>
+			<div class="row mb-5">
+				<div class="col-md-12">
+					<div class="card pt-2 pb-2">
+						<div class="card-body">
+							<div class="table-responsive p-md-3 pt-m-5">
+								<table class="table table-borderless table-hover">
+									<thead>
+										<th>Provinsi</th>
+										<th>Kasus Positif</th>
+										<th>Kasus Sembuh</th>
+										<th>Kasus Meninggal</th>
+									</thead>
+									<tbody id="inaDataTable">
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -74,8 +110,11 @@
 
 	
 	<!-- bootstrap script dependency -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="/libs/bootstrap/js/jquery-slim.min.js" ></script>
+	<script src="/libs/bootstrap/js/popper.min.js" ></script>
+	<script src="/libs/bootstrap/js/bootstrap.min.js" ></script>
+
+	<!-- custom javascript -->
+	<script src="/js/covid-ina.js" ></script>
 </body>
 </html>
