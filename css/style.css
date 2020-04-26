@@ -1,0 +1,50 @@
+html,body {
+	font-family: 'Open Sans';
+	background-color: #fafafa;
+	font-size: 14px;
+}
+header {
+	/*background-color: #34AE8A;*/
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #eaeaea;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Lobster', cursive;
+}
+
+
+.navbar-brand,.nav-link,
+.navbar-brand:hover {
+	color: #333
+}
+.nav-link:hover{
+	color: #34AE8A;
+}
+.navbar-brand {
+	font-size: 2rem;
+	font-family: 'Lobster', cursive;
+	font-weight: bold;
+	color: #34AE8A;
+}
+.nav-link {
+	font-family: 'Poppins',cursive;
+}
+.navbar-toggler {
+	color: #34AE8A;
+}
+
+.card {
+	border: 0;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px #e4e4e4;
+}
+
+.card-body h1 {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+span.red {
+	color: #f00;
+}

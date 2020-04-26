@@ -1,0 +1,5 @@
+@media all and (max-width: 480px){
+	.navbar-nav {
+		border-top: 1px solid #fff;
+	}
+}
