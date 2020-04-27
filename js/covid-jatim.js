@@ -38,33 +38,5 @@ let fetchDataJatim = async() => {
 	});
 }
 
-let generateJatimDatatable = () => {
-	let link = "https://literasistmj.000webhostapp.com/jatim";
-	let data = "";
-	let jatimDataTable = $("#jatimDataTable");
-	let appendTemplate = (data) => {
-		jatimDataTable.append(`
-			<tr>
-				<td>${data.zona}</td>
-				<td>${data.jumlah_kasus}</td>
-				<td>${data.jumlah_odp}</td>
-				<td>${data.jumlah_pdp}</td>
-				<td>${data.jumlah_positif}</td>
-				<td>${data.jumlah_sembuh}</td>
-				<td>${data.jumlah_meninggal}</td>
-			</tr>
-		`);
-	}
-
-	fetch(link).then(res => {
-		return res.json();
-	}).then(res => {
-		res.data.forEach( row => {
-			appendTemplate(row);
-		});
-	});
-}
-
 fetchDataJatim();
-generateJatimDatatable();
 
