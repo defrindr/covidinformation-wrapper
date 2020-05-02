@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Ce(gah) Cov(id-19)</title>
@@ -17,12 +18,15 @@
 	<link rel="stylesheet" href="css/responsive-480px.css">
 	<link rel="stylesheet" href="css/style.css">
 	<!-- include fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Open+Sans|Poppins|Press+Start+2P&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Open+Sans|Poppins|Press+Start+2P&display=swap"
+		rel="stylesheet">
 
 	<!-- data tables -->
-	<link rel="stylesheet" type="text/css" href="libs/datatables/datatables.min.css"/>
- 
+	<link rel="stylesheet" type="text/css" href="libs/datatables/datatables.min.css" />
+
 </head>
+
 <body>
 	<!-- header -->
 	<header class="m-md-5 m-3 p-3">
@@ -40,21 +44,22 @@
 							<a href="#info" class="nav-link">Apa itu CeCov ?</a>
 						</li>
 						<li class="nav-item">
-							<a href="#istilah-terkait"  class="nav-link">Istilah Terkait</a>
+							<a href="#istilah-terkait" class="nav-link">Istilah Terkait</a>
 						</li>
 						<li class="nav-item dropdown">
-							<a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown" role="button">Kasus Covid</a>
+							<a href="#" class=" nav-link dropdown-toggle" data-toggle="dropdown" role="button">Kasus
+								Covid</a>
 							<div class="dropdown-menu border-0">
-								<a href="#covid-world"  class="dropdown-item">Covid Dunia</a>
-								<a href="#covid-id"  class="dropdown-item">Covid Indonesia</a>
-								<a href="#covid-jatim"  class="dropdown-item">Covid  Jawa Timur</a>
+								<a href="#covid-world" class="dropdown-item">Covid Dunia</a>
+								<a href="#covid-id" class="dropdown-item">Covid Indonesia</a>
+								<a href="#covid-jatim" class="dropdown-item">Covid Jawa Timur</a>
 							</div>
 						</li>
 						<li class="nav-item">
-							<a href="#pencegahan"  class="nav-link">Pencegahan</a>
+							<a href="#pencegahan" class="nav-link">Pencegahan</a>
 						</li>
 						<li class="nav-item">
-							<a href="#our-team"  class="nav-link">Our Team</a>
+							<a href="#our-team" class="nav-link">Our Team</a>
 						</li>
 					</ul>
 				</div>
@@ -75,10 +80,13 @@
 						<div class="col-md-6">
 							<h1 class="mb-5 text-sm-center">Apa itu <span class="green">CeCov</span> ? </h1>
 							<p>
-								<b><span class="green">CeCov</span></b> adalah sebuah platform yang dikembangkan untuk memberikan informasi terkini dikala pandemi <b>COVID-19</b> yang merajalela saat ini.
+								<b><span class="green">CeCov</span></b> adalah sebuah platform yang dikembangkan untuk
+								memberikan informasi terkini dikala pandemi <b>COVID-19</b> yang merajalela saat ini.
 							</p>
 							<p>
-								<b>COVID-19</b> sendiri adalah penyakit menular yang disebabkan oleh jenis coronavirus yang baru ditemukan. Ini merupakan virus baru dan penyakit yang sebelumnya tidak dikenal sebelum terjadi wabah di Wuhan, Tiongkok, bulan Desember 2019.
+								<b>COVID-19</b> sendiri adalah penyakit menular yang disebabkan oleh jenis coronavirus
+								yang baru ditemukan. Ini merupakan virus baru dan penyakit yang sebelumnya tidak dikenal
+								sebelum terjadi wabah di Wuhan, Tiongkok, bulan Desember 2019.
 							</p>
 						</div>
 					</div>
@@ -88,21 +96,24 @@
 	</section>
 	<!-- end section info -->
 
-	
+
 	<section id="istilah-terkait" class="mb-4 pt-md-5">
 		<div class="container">
-			<h2 class="text-center sec__title mb-5 pb-3 pt-md-5 pt-5">Istilah Terkait <span class="green">COVID-19</span></h2>
+			<h2 class="text-center sec__title mb-5 pb-3 pt-md-5 pt-5">Istilah Terkait <span
+					class="green">COVID-19</span></h2>
 			<div class="row" id="istilahTerkaitData">
 				<div class="col-md-4">
 					<div class="card">
 						<div class="card-header">
-							<p class="mb-0 d-block" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							<p class="mb-0 d-block" data-toggle="collapse" data-target="#collapseOne"
+								aria-expanded="true" aria-controls="collapseOne">
 								ORANG DALAM RESIKO (<span class="green">ODR</span>) / Pelaku Perjalanan
 							</p>
 						</div>
 						<div id="collapseOne" class="collapse" data-parent="#accordion">
 							<div class="card-body">
-								Orang yang TIDAK BERGEJALA tetapi MEMILIKI RIWAYAT PERJALANAN ATAU TINGGAL DI NEGARA/WILAYAH TERJANGKIT pada 14 hari terakhir.
+								Orang yang TIDAK BERGEJALA tetapi MEMILIKI RIWAYAT PERJALANAN ATAU TINGGAL DI
+								NEGARA/WILAYAH TERJANGKIT pada 14 hari terakhir.
 							</div>
 						</div>
 					</div>
@@ -115,28 +126,29 @@
 
 	<section id="covid-id" class="pt-5 pb-5 container">
 		<div class="mb-4">
-			<h2 class="text-center mb-3 pt-5 sec__title">Data kasus COVID-19 <span class="green">Internasional</span></h2>
-			</div>
-			<div class="row mb-5">
-				<div class="col-md-12">
-					<div class="card pt-2 pb-2">
-						<div class="card-body">
-							<div class="p-md-3 pt-m-5">
-								<table class="table table-borderless table-hover w-100" id="worldDataTable">
-									<thead>
-										<th>Nama Negara</th>
-										<th>Jumlah Kasus</th>
-										<th>Jumlah Meninggal</th>
-										<th>Jumlah Sembuh</th>
-										<th>Jumlah Kasus Aktif</th>
-										<th>Update Terakhir</th>
-									</thead>
-								</table>
-							</div>
+			<h2 class="text-center mb-3 pt-5 pb-5 sec__title">Data kasus COVID-19 <span class="green">Internasional</span>
+			</h2>
+		</div>
+		<div class="row mb-5">
+			<div class="col-md-12">
+				<div class="card pt-2 pb-2">
+					<div class="card-body">
+						<div class="p-md-3 pt-m-5">
+							<table class="table table-borderless table-hover w-100" id="worldDataTable">
+								<thead>
+									<th>Nama Negara</th>
+									<th>Jumlah Kasus</th>
+									<th>Jumlah Meninggal</th>
+									<th>Jumlah Sembuh</th>
+									<th>Jumlah Kasus Aktif</th>
+									<th>Update Terakhir</th>
+								</thead>
+							</table>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 
@@ -175,13 +187,15 @@
 				<div class="col-md-6 offset-md-2">
 					<p>
 						<h2 class="sec__title pb-3">Diagnosa Mandiri</h2>
-						<b>COVID-19</b>  menyebar dengan sangat cepat karena bisa pindah dari orang ke orang bahkan sebelum orang tersebut tidak menunjukkan gejala.
+						<b>COVID-19</b> menyebar dengan sangat cepat karena bisa pindah dari orang ke orang bahkan
+						sebelum orang tersebut tidak menunjukkan gejala.
 					</p>
 					<p class="pb-3">
 						Penting bagi Anda untuk menilai kondisi secara mandiri. Anda bergejala?
 					</p>
 					<p>
-						<a class="btn border-white bg-transparent border-2 text-white pb-3" href="https://checkupcovid19.jatimprov.go.id/covid19/#!/checkup/">
+						<a class="btn border-white bg-transparent border-2 text-white pb-3"
+							href="https://checkupcovid19.jatimprov.go.id/covid19/#!/checkup/">
 							Mulai Diagnosa
 						</a>
 					</p>
@@ -192,7 +206,8 @@
 
 	<section id="covid-jatim" class="pt-5 pb-5 container">
 		<div class="mb-4">
-			<h2 class="text-center mb-5 pt-5 pb-4 sec__title">Penyebaran COVID-19 wilayah <span class="green">Jawa Timur</span></h2>
+			<h2 class="text-center mb-5 pt-5 pb-4 sec__title">Penyebaran COVID-19 wilayah <span class="green">Jawa
+					Timur</span></h2>
 			<div class="row mb-3" id="jatimStatistik">
 			</div>
 			<div class="row mb-5">
@@ -223,17 +238,21 @@
 
 	<section id="pencegahan" class="mb-5 pt-5">
 		<div class="container">
-			<h2 class="sec__title text-center mb-md-5 pb-5 pt-md-5">Tindakan <span class="green">Pencegahan</span> terhadap COVID-19</h2>
+			<h2 class="sec__title text-center mb-md-5 pb-5 pt-md-5">Tindakan <span class="green">Pencegahan</span>
+				terhadap COVID-19</h2>
 			<div class="row">
 				<div class="col-md-4 mb-4">
 					<div class="card p-4 h-100">
 						<div class="card-body p-md-3 p-1">
-							<img src="images/washing-hands.png" alt="washing hand" class="img img-fluid m-auto w-50 w-md-25 d-block">
+							<img src="images/washing-hands.png" alt="washing hand"
+								class="img img-fluid m-auto w-50 w-md-25 d-block">
 							<p class="pt-5">
-								Seringlah <b><span class="green">mencuci tangan</span></b> Anda dengan air bersih mengalir dan sabun, atau cairan antiseptik berbahan dasar alkohol. 
+								Seringlah <b><span class="green">mencuci tangan</span></b> Anda dengan air bersih
+								mengalir dan sabun, atau cairan antiseptik berbahan dasar alkohol.
 							</p>
 							<p>
-								Mengapa? Mencuci tangan dengan air bersih yang mengalir dan sabun, atau cairan antiseptik berbahan dasar alkohol dapat membunuh virus di tangan Anda.
+								Mengapa? Mencuci tangan dengan air bersih yang mengalir dan sabun, atau cairan
+								antiseptik berbahan dasar alkohol dapat membunuh virus di tangan Anda.
 							</p>
 						</div>
 					</div>
@@ -241,11 +260,15 @@
 				<div class="col-md-4 mb-4">
 					<div class="card p-4 h-100">
 						<div class="card-body p-md-3 p-1">
-							<img src="images/distance.png" alt="Social Distancing" class="img img-fluid m-auto w-50 w-md-25 d-block">
+							<img src="images/distance.png" alt="Social Distancing"
+								class="img img-fluid m-auto w-50 w-md-25 d-block">
 							<p class="pt-5">
-								<b><span class="green">Jaga jarak</span></b> setidaknya 1 meter dengan orang yang batuk-batuk atau bersin-bersin. Mengapa? Ketika batuk atau bersin, orang mengeluarkan percikan dari hidung atau mulutnya dan percikan ini dapat membawa virus. 
+								<b><span class="green">Jaga jarak</span></b> setidaknya 1 meter dengan orang yang
+								batuk-batuk atau bersin-bersin. Mengapa? Ketika batuk atau bersin, orang mengeluarkan
+								percikan dari hidung atau mulutnya dan percikan ini dapat membawa virus.
 							</p>
-							<p>Jika Anda terlalu dekat, Anda dapat menghirup percikan ini dan juga virus COVID-19 jika orang yang batuk itu terjangkit penyakit ini.
+							<p>Jika Anda terlalu dekat, Anda dapat menghirup percikan ini dan juga virus COVID-19 jika
+								orang yang batuk itu terjangkit penyakit ini.
 							</p>
 						</div>
 					</div>
@@ -253,12 +276,16 @@
 				<div class="col-md-4 mb-4">
 					<div class="card p-4 h-100">
 						<div class="card-body p-md-3 p-1">
-							<img src="images/coronavirus.png" alt="dont touch face" class="img img-fluid m-auto w-50 w-md-25 d-block">
+							<img src="images/coronavirus.png" alt="dont touch face"
+								class="img img-fluid m-auto w-50 w-md-25 d-block">
 							<p class="pt-5">
-								<b><span class="green">Hindari menyentuh mata, hidung, dan mulut.</span></b> Mengapa? Tangan menyentuh berbagai permukaan benda dan virus penyakit ini dapat tertempel di tangan. 
+								<b><span class="green">Hindari menyentuh mata, hidung, dan mulut.</span></b> Mengapa?
+								Tangan menyentuh berbagai permukaan benda dan virus penyakit ini dapat tertempel di
+								tangan.
 							</p>
 							<p>
-								Tangan yang terkontaminasi dapat membawa virus ini ke mata, hidung atau mulut, yang dapat menjadi titik masuk virus ini ke tubuh Anda sehingga Anda menjadi sakit.
+								Tangan yang terkontaminasi dapat membawa virus ini ke mata, hidung atau mulut, yang
+								dapat menjadi titik masuk virus ini ke tubuh Anda sehingga Anda menjadi sakit.
 							</p>
 						</div>
 					</div>
@@ -268,10 +295,14 @@
 						<div class="card-body p-md-3 p-1">
 							<img src="images/flu.png" alt="flu" class="img img-fluid m-auto w-50 w-md-25 d-block">
 							<p class="pt-5">
-								 Pastikan Anda dan orang-orang di sekitar <b><span class="green">Anda mengikuti etika batuk dan bersin dengan cara menutup mulut dan hidung dengan siku terlipat atau tisu</span></b> saat batuk atau bersin dan segera buang tisu bekas tersebut.
+								Pastikan Anda dan orang-orang di sekitar <b><span class="green">Anda mengikuti etika
+										batuk dan bersin dengan cara menutup mulut dan hidung dengan siku terlipat atau
+										tisu</span></b> saat batuk atau bersin dan segera buang tisu bekas tersebut.
 							</p>
-							<p> 
-								Mengapa? Percikan dapat menyebarkan virus. Dengan mengikuti etika batuk dan bersin, Anda melindungi orang-orang di sekitar dari virus-virus seperti batuk pilek, flu dan COVID-19.
+							<p>
+								Mengapa? Percikan dapat menyebarkan virus. Dengan mengikuti etika batuk dan bersin, Anda
+								melindungi orang-orang di sekitar dari virus-virus seperti batuk pilek, flu dan
+								COVID-19.
 
 							</p>
 						</div>
@@ -280,15 +311,22 @@
 				<div class="col-md-4 mb-4">
 					<div class="card p-4 h-100">
 						<div class="card-body p-md-3 p-1">
-							<img src="images/government.png" alt="government" class="img img-fluid m-auto w-50 w-md-25 d-block">
+							<img src="images/government.png" alt="government"
+								class="img img-fluid m-auto w-50 w-md-25 d-block">
 							<p class="pt-5">
-								 <b><span class="green">Tetaplah tinggal di rumah</span></b> jika merasa kurang sehat. Jika Anda demam, batuk dan kesulitan bernapas, segeralah cari pertolongan medis dan tetap memberitahukan kondisi Anda terlebih dahulu. 
+								<b><span class="green">Tetaplah tinggal di rumah</span></b> jika merasa kurang sehat.
+								Jika Anda demam, batuk dan kesulitan bernapas, segeralah cari pertolongan medis dan
+								tetap memberitahukan kondisi Anda terlebih dahulu.
 							</p>
 							<p>
-								<b><span class="green">Ikuti arahan Dinas Kesehatan setempat Anda</span></b>. Mengapa? Kementerian Kesehatan dan Dinas Kesehatan daerah akan memiliki informasi terbaru tentang situasi di wilayah Anda. 
+								<b><span class="green">Ikuti arahan Dinas Kesehatan setempat Anda</span></b>. Mengapa?
+								Kementerian Kesehatan dan Dinas Kesehatan daerah akan memiliki informasi terbaru tentang
+								situasi di wilayah Anda.
 							</p>
 							<p>
-								Dengan memberitahukan kondisi Anda terlebih dahulu, petugas kesehatan yang akan merawat Anda dapat segera mengarahkan Anda ke fasilitas pelayanan kesehatan yang tepat. Langkah ini juga melindungi Anda dan membantu mencegah penyebaran virus dan infeksi lainnya.
+								Dengan memberitahukan kondisi Anda terlebih dahulu, petugas kesehatan yang akan merawat
+								Anda dapat segera mengarahkan Anda ke fasilitas pelayanan kesehatan yang tepat. Langkah
+								ini juga melindungi Anda dan membantu mencegah penyebaran virus dan infeksi lainnya.
 
 							</p>
 						</div>
@@ -299,10 +337,13 @@
 						<div class="card-body p-md-3 p-1">
 							<img src="images/search.png" alt="search" class="img img-fluid m-auto w-50 w-md-25 d-block">
 							<p class="pt-5">
-								 <b><span class="green">Tetap ikuti informasi terbaru</span></b> tentang hotspot-hotspot COVID-19 (kota atau daerah di mana COVID-19 menyebar luas).
+								<b><span class="green">Tetap ikuti informasi terbaru</span></b> tentang hotspot-hotspot
+								COVID-19 (kota atau daerah di mana COVID-19 menyebar luas).
 							</p>
 							<p>
-								Jika memungkinkan, hindari bepergian ke tempat-tempat tersebut – terutama jika Anda sudah berusia lanjut atau mengidap diabetes, sakit jantung atau paru-paru Mengapa? Kemungkinan tertular COVID-19 lebih tinggi di tempat-tempat tersebut.
+								Jika memungkinkan, hindari bepergian ke tempat-tempat tersebut – terutama jika Anda
+								sudah berusia lanjut atau mengidap diabetes, sakit jantung atau paru-paru Mengapa?
+								Kemungkinan tertular COVID-19 lebih tinggi di tempat-tempat tersebut.
 
 							</p>
 						</div>
@@ -311,7 +352,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 
 	<section id="our-team" class="mb-5 mt-4">
 		<div class="container pt-3">
@@ -327,31 +368,27 @@
 				Made with <span class="text-white">&hearts;</span> by <a href="#">Defri Indra Mahardika</a> .
 			</p>
 			<p class="m-1">
-				Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+				Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+					href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 			</p>
 		</div>
 	</footer>
 
 	<!-- bootstrap script dependency -->
 	<script src="libs/jquery-3.3.1.min.js"></script> <!-- dont change this jquery version -->
-	<!-- <script src="libs/jquery-3.5.0.min.js" ></script> --> 
-		<!-- <script src="libs/bootstrap/js/jquery-slim.min.js" ></script> -->
-	<script src="libs/bootstrap/js/popper.min.js" ></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js" ></script>
-	
-	
-	<!-- <script src="libs/moment.min.js"></script>
-	<script src="libs/datetime-moment.js"></script> -->
+	<script src="libs/bootstrap/js/popper.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- datatables -->
 	<script src="libs/datatables/datatables/js/jquery.dataTables.min.js"></script>
 	<script src="libs/datatables/datatables.min.js"></script>
 
 	<!-- custom javascript -->
-	<script type="module" src="js/covid-datatables.js" ></script>
-	<script type="module" src="js/covid-ina.js" ></script>
-	<script src="js/covid-jatim.js" ></script>
-	<script src="js/istilah-terkait.js" ></script>
-	<script src="js/fetch-team.js" ></script>
+	<script type="module" src="js/covid-datatables.js"></script>
+	<script type="module" src="js/covid-ina.js"></script>
+	<script src="js/covid-jatim.js"></script>
+	<script src="js/istilah-terkait.js"></script>
+	<script src="js/fetch-team.js"></script>
 </body>
+
 </html>

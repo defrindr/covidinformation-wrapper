@@ -1,35 +1,46 @@
-html,body {
+html,
+body {
 	font-family: 'Open Sans';
 	background-color: #fafafa;
 	font-size: 14px;
 }
+
 .navbar {
-	/*background-color: #34AE8A;*/
 	background-color: #fff;
 	box-shadow: 0px 0px 10px #eaeaea;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Lobster', cursive;
 }
 
 
-.navbar-brand,.nav-link,
+.navbar-brand,
+.nav-link,
 .navbar-brand:hover {
 	color: #333
 }
-.nav-link:hover{
+
+.nav-link:hover {
 	color: #34AE8A;
 }
+
 .navbar-brand {
 	font-size: 2rem;
 	font-family: 'Lobster', cursive;
 	font-weight: bold;
 	color: #34AE8A;
 }
+
 .nav-link {
-	font-family: 'Poppins',cursive;
+	font-family: 'Poppins', cursive;
 }
+
 .navbar-toggler {
 	color: #34AE8A;
 }
@@ -53,67 +64,64 @@ span.green {
 	color: #34AE8A;
 }
 
-#covid-ina .card:hover,
-#covid-jatim .card:hover{
-	box-shadow: 0 0 15px $e4e4e4;
-}
-
 .card.info-ina {
 	color: #fff;
 }
+
 .card.info-ina .icon {
 	font-size: 3rem;
 }
+
 .info_ina_total {
 	font-size: 1.2rem;
-	font-family: 'Poppins',cursive;
+	font-family: 'Poppins', cursive;
 }
+
 .info_ina_total span {
 	font-weight: bold;
 }
-.table-responsive {
-	max-height: 70vh;
+
+div.dataTables_wrapper div.dataTables_info {
+	white-space: pre-wrap;
 }
+
 
 #istilah-terkait .card .card-header {
 	background-color: #fff;
-	font-family: 'Poppins',cursive;
+	font-family: 'Poppins', cursive;
 	cursor: pointer;
 	font-weight: bold;
 }
 
 
-.bg-success,.btn-success {
-	background-color: #34AE8A!important;
+.bg-success,
+.btn-success {
+	background-color: #34AE8A !important;
 }
 
-/* width */
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+	background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #fff;
+	background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #34AE8A;
 }
 
 footer {
-	font-family: 'Poppins',cursive;
+	font-family: 'Poppins', cursive;
 	color: #ddd;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #34AE8A;
-}
-
-footer a:hover,footer a {
+footer a:hover,
+footer a {
 	color: #fff;
 	text-decoration: none
 }
-

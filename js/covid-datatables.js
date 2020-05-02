@@ -7,17 +7,28 @@ $(document).ready(function () {
 			url: 'https://literasistmj.000webhostapp.com/worlds',
 			dataSrc: 'data'
 		},
-		columns: [
-			{data: 'nama_negara'},
-			{data: 'jumlah_kasus'},
-			{data: 'jumlah_meninggal'},
-			{data: 'jumlah_sembuh'},
-			{data: 'jumlah_kasus_aktif'},
-			{data: 'update_terakhir'},
+		columns: [{
+				data: 'nama_negara'
+			},
+			{
+				data: 'jumlah_kasus'
+			},
+			{
+				data: 'jumlah_meninggal'
+			},
+			{
+				data: 'jumlah_sembuh'
+			},
+			{
+				data: 'jumlah_kasus_aktif'
+			},
+			{
+				data: 'update_terakhir'
+			},
 		],
 		columnDefs: [{
 			targets: 5,
-			render: function (data) { // Target is the column # zero-based
+			render: function (data) {
 				return timeConverter(data);
 			}
 		}]
@@ -29,28 +40,48 @@ $(document).ready(function () {
 			url: 'https://literasistmj.000webhostapp.com/jatim',
 			dataSrc: 'data'
 		},
-		columns: [
-			{data: 'zona'},
-			{data: 'jumlah_kasus'},
-			{data: 'jumlah_odp'},
-			{data: 'jumlah_pdp'},
-			{data: 'jumlah_positif'},
-			{data: 'jumlah_sembuh'},
-			{data: 'jumlah_meninggal'},
+		columns: [{
+				data: 'zona'
+			},
+			{
+				data: 'jumlah_kasus'
+			},
+			{
+				data: 'jumlah_odp'
+			},
+			{
+				data: 'jumlah_pdp'
+			},
+			{
+				data: 'jumlah_positif'
+			},
+			{
+				data: 'jumlah_sembuh'
+			},
+			{
+				data: 'jumlah_meninggal'
+			},
 		]
 	});
-	
+
 	$('#inaDataTable').DataTable({
 		responsive: true,
 		ajax: {
 			url: 'https://literasistmj.000webhostapp.com/provinces',
 			dataSrc: 'data'
 		},
-		columns: [
-			{data: 'provinsi'},
-			{data: 'kasus_positif'},
-			{data: 'kasus_sembuh'},
-			{data: 'kasus_meninggal'},
+		columns: [{
+				data: 'provinsi'
+			},
+			{
+				data: 'kasus_positif'
+			},
+			{
+				data: 'kasus_sembuh'
+			},
+			{
+				data: 'kasus_meninggal'
+			},
 		]
 	});
 });

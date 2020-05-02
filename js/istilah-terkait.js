@@ -2,24 +2,23 @@ let generateIstilah = () => {
 	let istilahTerkaitData = $("#istilahTerkaitData");
 	let data = "";
 	let id = 0;
-	let template = (title,ket) => {
-		id+=1;
+	let template = (title, ket) => {
+		id += 1;
 		data += `
-				<div class="col-md-6 mb-2">
-					<div class="card">
-						<div class="card-header">
-							<p class="mb-0 d-block" data-toggle="collapse" data-target="#collapse${id}" aria-expanded="true" aria-controls="collapse${id}">
-								${title}
-							</p>
-						</div>
-						<div id="collapse${id}" class="collapse">
-							<div class="card-body">
-								${ket}
-							</div>
+			<div class="col-md-6 mb-2">
+				<div class="card">
+					<div class="card-header">
+						<p class="mb-0 d-block" data-toggle="collapse" data-target="#collapse${id}" aria-expanded="true" aria-controls="collapse${id}">
+							${title}
+						</p>
+					</div>
+					<div id="collapse${id}" class="collapse">
+						<div class="card-body">
+							${ket}
 						</div>
 					</div>
 				</div>
-		`
+			</div>`;
 	}
 
 	template("ORANG DALAM RESIKO (<span class='green'>ODR</span>) / Pelaku Perjalanan",
@@ -33,7 +32,7 @@ let generateIstilah = () => {
 			<li>Orang yang berada dalam suatu ruangan yang sama dengan kasus (termasuk tempat kerja, kelas, rumah, acara besar) dalam 2 hari sebelum kasus timbul gejala dan hingga 14 hari setelah kasus timbul gejala.</li>
 			<li>Orang yang bepergian bersama (radius 1 meter) dengan segala jenis alat angkut/kendaraan dalam 2 hari sebelum kasus timbul gejala dan hingga 14 hari setelah kasus timbul gejala.</li>
 			</ul>`);
-	
+
 	template("ORANG DALAM PEMANTAUAN (<span class='green'>ODP</span>)",
 		`<ul><li>Orang yang mengalami demam (≥38.0C) atau riwayat demam; atau gejala gangguan sistem pernapasan seperti pilek/sakit tenggorokan/batuk, DAN tidak ada penyebab lain berdasarkan gambaran klinis yang meyakinkan DAN pada 14 hari terakhir sebelum timbul gejala memiliki riwayat perjalanan atau tinggal di negara/wilayah terjangkit.</li>
 			<li>Orang yang mengalami gejala gangguan sistem pernapasan seperti pilek/sakit tenggorokan/batuk DAN pada 14 hari terakhir sebelum timbul gejala memiliki riwayat kontak dengan kasus konfirmasi COVID-19.</li>
