@@ -1,18 +1,6 @@
-function timeConverter(UNIX_timestamp){
-  var a = new Date(UNIX_timestamp * 1000);
-  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  var hour = a.getHours();
-  var min = a.getMinutes();
-  var sec = a.getSeconds();
-  var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-  return time;
-}
+import timeConverter from './timeConverter.js'
 
-
-$(document).ready(function(){
+$(document).ready(function () {
 	$('#worldDataTable').DataTable({
 		responsive: true,
 		ajax: {
@@ -20,14 +8,19 @@ $(document).ready(function(){
 			dataSrc: 'data'
 		},
 		columns: [
-			{data:'nama_negara'},
-			{data:'jumlah_kasus'},
-			{data:'jumlah_meninggal'},
-			{data:'jumlah_sembuh'},
-			{data:'jumlah_kasus_aktif'},
-			{data:'update_terakhir'},
-
-		]
+			{data: 'nama_negara'},
+			{data: 'jumlah_kasus'},
+			{data: 'jumlah_meninggal'},
+			{data: 'jumlah_sembuh'},
+			{data: 'jumlah_kasus_aktif'},
+			{data: 'update_terakhir'},
+		],
+		columnDefs: [{
+			targets: 5,
+			render: function (data) { // Target is the column # zero-based
+				return timeConverter(data);
+			}
+		}]
 	});
 
 	$('#jatimDataTable').DataTable({
@@ -61,5 +54,3 @@ $(document).ready(function(){
 		]
 	});
 });
-
-

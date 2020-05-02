@@ -1,3 +1,5 @@
+import timeConverter from './timeConverter.js'
+
 let fetchDataIna = async() => {
 	let inaDataStatistik = $("#inaStatistik");
 	let inaLastUpdate = $("#inaLastUpdated");
@@ -34,7 +36,7 @@ let fetchDataIna = async() => {
 		buildDataIna("Jumlah Meninggal","far fa-sad-tear",data.jumlah_meninggal,"danger");
 		buildDataIna("Jumlah Sembuh","far fa-smile-wink",data.jumlah_sembuh,"success");
 
-		inaLastUpdate.html(timeConverter(data.update_terakhir));
+		inaLastUpdate.html(timeConverter(data.update_terakhir,true));
 		inaDataStatistik.html(dataIna)
 	});
 }
