@@ -1,3 +1,5 @@
+import data from './source.js';
+
 let fetchDataJatim = async () => {
 	let jatimDataStatistik = $("#jatimStatistik");
 	let dataJatim = "";
@@ -23,7 +25,7 @@ let fetchDataJatim = async () => {
 				</div>`;
 		dataJatim += schemaStat;
 	}
-	fetch('https://literasistmj.000webhostapp.com/province/jawa%20timur')
+	fetch(data.url+'/province/jawa%20timur')
 		.then(res => {
 			return res.json();
 		}).then(res => {

@@ -1,10 +1,11 @@
-import timeConverter from './timeConverter.js'
+import timeConverter from './timeConverter.js';
+import data from './source.js';
 
 $(document).ready(function () {
 	$('#worldDataTable').DataTable({
 		responsive: true,
 		ajax: {
-			url: 'https://literasistmj.000webhostapp.com/worlds',
+			url: data.url+'/worlds',
 			dataSrc: 'data'
 		},
 		columns: [{
@@ -37,7 +38,7 @@ $(document).ready(function () {
 	$('#jatimDataTable').DataTable({
 		responsive: true,
 		ajax: {
-			url: 'https://literasistmj.000webhostapp.com/jatim',
+			url: data.url+'/jatim',
 			dataSrc: 'data'
 		},
 		columns: [{
@@ -67,7 +68,7 @@ $(document).ready(function () {
 	$('#inaDataTable').DataTable({
 		responsive: true,
 		ajax: {
-			url: 'https://literasistmj.000webhostapp.com/provinces',
+			url: data.url+'/provinces',
 			dataSrc: 'data'
 		},
 		columns: [{

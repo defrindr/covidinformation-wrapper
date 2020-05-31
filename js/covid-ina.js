@@ -1,4 +1,5 @@
-import timeConverter from './timeConverter.js'
+import timeConverter from './timeConverter.js';
+import data from './source.js';
 
 let fetchDataIna = async () => {
 	let inaDataStatistik = $("#inaStatistik");
@@ -26,7 +27,7 @@ let fetchDataIna = async () => {
 				</div>`;
 		dataIna += schemaStat;
 	}
-	fetch('https://literasistmj.000webhostapp.com/world/indonesia')
+	fetch(data.url+'/world/indonesia')
 		.then(res => {
 			return res.json();
 		}).then(res => {
