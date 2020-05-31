@@ -1,7 +1,7 @@
 # CovidStaticWebPage
 fetch api from 
 ```
-https://literasistmj.000webhostapp.com/documentation
+https://api.covid.defrindr.my.id/documentation
 https://api.github.com/users/
 ```
 
